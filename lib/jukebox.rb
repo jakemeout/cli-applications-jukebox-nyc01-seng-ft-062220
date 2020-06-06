@@ -29,12 +29,19 @@ def play(songs)
        if mutate_songs[counter][:song] == user_input || mutate_songs[counter][:number] == user_input.to_i
          puts "Playing #{mutate_songs[counter][:song]}"
          break
+<<<<<<< HEAD
        elsif user_input != mutate_songs[counter][:song] || user_input != mutate_songs[counter][:number]
           puts "Invalid input, please try again"
+=======
+       elsif mutate_songs[counter][:song] != user_input
+          puts "Invalid input, please try again"
+          play(songs)
+>>>>>>> e2c3a91dbbbd86ffa535b69bc87139ced30037f4
           break
        end
       counter += 1
     end
+<<<<<<< HEAD
 end
 
 def run(songs) 
@@ -59,6 +66,11 @@ def run(songs)
 end
   
 
+=======
+    break
+end
+
+>>>>>>> e2c3a91dbbbd86ffa535b69bc87139ced30037f4
 def exit_jukebox
   puts "Goodbye"
 end
